@@ -1150,7 +1150,7 @@ body {
     font-weight: 500;
     padding-right: 2rem;
     display: flex;
-    align-items: center; /* aligns the text vertically */
+    align-items: left; /* aligns the text vertically */
 }
 
 
