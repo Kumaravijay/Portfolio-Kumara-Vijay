@@ -1110,30 +1110,36 @@ body {
   position: relative;
   max-width: 900px;
   margin: 0 auto;
-  padding-left: 140px; /* leave space for date + dot + line */
-}
-
-.experience-timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 110px; /* vertical line position */
-  width: 2px;
-  height: 100%;
-  background-color: #333;
+  padding: 0 20px;
 }
 
 .experience-item {
+  display: flex;
   position: relative;
   margin-bottom: 50px;
+  align-items: flex-start;
 }
 
-/* Blue dot */
+/* Vertical line */
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #333;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Dot on the vertical line */
 .experience-item::before {
   content: '';
   position: absolute;
-  left: 103px; /* aligns center with the vertical line */
+  left: 50%;
   top: 5px;
+  transform: translateX(-50%);
   width: 14px;
   height: 14px;
   background-color: #0A84FF;
@@ -1141,27 +1147,23 @@ body {
   z-index: 1;
 }
 
-/* Date - placed to the left of the dot */
+/* Date on the left side */
 .experience-date {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100px;
+  width: 40%;
   text-align: right;
-  font-weight: 500;
+  padding-right: 20px;
   color: #0A84FF;
+  font-weight: 500;
 }
 
-/* Experience content box */
+/* Content on the right side */
 .experience-content {
-  margin-left: 60px;
+  width: 60%;
   padding: 20px;
   background-color: #1A1A1A;
-  color: #ffffff;
-  border-radius: 8px;
   border: 1px solid #333;
-  position: relative;
-  left: 70px; /* moves it to the right of the line */
+  border-radius: 8px;
+  color: #FFFFFF;
 }
 
 
