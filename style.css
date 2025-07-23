@@ -1107,62 +1107,61 @@ body {
 
 /* Experience Section */
 .experience-timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 100px;
 }
 
-.experience-item:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 20px; /* same as the timeline line */
-    transform: translateY(-50%);
-    width: 14px;
-    height: 14px;
-    background-color: #0A84FF;
-    border-radius: 50%;
-    z-index: 1;
+.experience-timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50px; /* Center of the timeline */
+  width: 2px;
+  height: 100%;
+  background-color: #333333;
+  z-index: 0;
 }
-
 
 .experience-item {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-bottom: 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .experience-item:before {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 20px;
-    width: 14px;
-    height: 14px;
-    background-color: #0A84FF;
-    border-radius: 50%;
-    z-index: 1;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50px; /* Same as timeline center */
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background-color: #0A84FF;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 .experience-date {
-    display: flex;
-    align-items: center;
-    min-width: 120px;
-    padding-right: 2rem;
-    color: #0A84FF;
-    font-weight: 500;
+  min-width: 80px;
+  margin-right: 2rem;
+  text-align: right;
+  color: #0A84FF;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-
-
 .experience-content {
-    flex: 1;
-    background-color: #1A1A1A;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid #333333;
-    margin-left: 2rem;
+  background-color: #1A1A1A;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333333;
+  color: #fff;
+  flex: 1;
 }
 
 .experience-content h3 {
