@@ -1128,15 +1128,16 @@ body {
 
 .experience-item {
     display: flex;
-    margin-bottom: 3rem;
+    align-items: center;
     position: relative;
+    margin-bottom: 3rem;
 }
 
 .experience-item:before {
-    content: '';
     position: absolute;
-    left: 30px;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
     width: 14px;
     height: 14px;
     background-color: #0A84FF;
@@ -1145,13 +1146,14 @@ body {
 }
 
 .experience-date {
+    display: flex;
+    align-items: center;
     min-width: 120px;
+    padding-right: 2rem;
     color: #0A84FF;
     font-weight: 500;
-    padding-right: 2rem;
-    display: flex;
-    align-items: center; /* aligns the text vertically */
 }
+
 
 
 .experience-content {
