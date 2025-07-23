@@ -1116,7 +1116,7 @@ body {
     content: '';
     position: absolute;
     left: 20px;
-    top: 0;
+    top: 8px;
     bottom: 0;
     width: 2px;
     background-color: #333333;
@@ -1144,7 +1144,8 @@ body {
     min-width: 120px;
     color: #0A84FF;
     font-weight: 500;
-    padding-right: 2rem;
+    padding-right: 2rem
+    padding-top: 4px;;
 }
 
 .experience-content {
