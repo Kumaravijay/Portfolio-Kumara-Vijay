@@ -1135,7 +1135,7 @@ body {
 .experience-item:before {
     content: '';
     position: absolute;
-    left: 14px;
+    left: 30px;
     top: 0;
     width: 14px;
     height: 14px;
@@ -1150,7 +1150,7 @@ body {
     font-weight: 500;
     padding-right: 2rem;
     display: flex;
-    align-items: left; /* aligns the text vertically */
+    align-items: center; /* aligns the text vertically */
 }
 
 
