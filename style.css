@@ -1112,15 +1112,19 @@ body {
     margin: 0 auto;
 }
 
-.experience-timeline:before {
+.experience-item:before {
     content: '';
     position: absolute;
-    left: 20px;
-    top: 8px;
-    bottom: 0;
-    width: 2px;
-    background-color: #333333;
+    top: 50%;
+    left: 20px; /* same as the timeline line */
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: #0A84FF;
+    border-radius: 50%;
+    z-index: 1;
 }
+
 
 .experience-item {
     display: flex;
@@ -1144,9 +1148,11 @@ body {
     min-width: 120px;
     color: #0A84FF;
     font-weight: 500;
-    padding-right: 2rem
-    padding-top: 4px;;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center; /* aligns the text vertically */
 }
+
 
 .experience-content {
     flex: 1;
