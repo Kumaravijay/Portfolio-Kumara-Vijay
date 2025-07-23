@@ -1108,61 +1108,62 @@ body {
 /* Experience Section */
 .experience-timeline {
   position: relative;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding-left: 100px;
+  padding-left: 140px; /* leave space for date + dot + line */
 }
 
-.experience-timeline:before {
+.experience-timeline::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 50px; /* Center of the timeline */
+  left: 110px; /* vertical line position */
   width: 2px;
   height: 100%;
-  background-color: #333333;
-  z-index: 0;
+  background-color: #333;
 }
 
 .experience-item {
   position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 50px;
 }
 
-.experience-item:before {
+/* Blue dot */
+.experience-item::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50px; /* Same as timeline center */
-  transform: translate(-50%, -50%);
+  left: 103px; /* aligns center with the vertical line */
+  top: 5px;
   width: 14px;
   height: 14px;
   background-color: #0A84FF;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 1;
 }
 
+/* Date - placed to the left of the dot */
 .experience-date {
-  min-width: 80px;
-  margin-right: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
   text-align: right;
-  color: #0A84FF;
   font-weight: 500;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  color: #0A84FF;
 }
 
+/* Experience content box */
 .experience-content {
+  margin-left: 60px;
+  padding: 20px;
   background-color: #1A1A1A;
-  padding: 1.5rem;
+  color: #ffffff;
   border-radius: 8px;
-  border: 1px solid #333333;
-  color: #fff;
-  flex: 1;
+  border: 1px solid #333;
+  position: relative;
+  left: 70px; /* moves it to the right of the line */
 }
+
 
 .experience-content h3 {
     color: #FFFFFF;
