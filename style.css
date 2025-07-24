@@ -1106,43 +1106,39 @@ body {
 }
 
 /* Experience Section */
-.experience-timeline {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.experience-item {
-  margin-bottom: 40px;
-}
-
-.experience-content {
+.experience-box {
   background-color: #1A1A1A;
+  color: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-bottom: 30px;
   border: 1px solid #333;
-  color: #FFFFFF;
 }
 
 .experience-date {
+  font-weight: bold;
   color: #0A84FF;
-  font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .experience-content h3 {
-  margin: 0 0 5px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .experience-content h4 {
+  margin: 5px 0;
   color: #0A84FF;
-  margin: 0 0 10px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .experience-content p {
-  margin: 0;
-  color: #CCCCCC;
-  line-height: 1.6;
+  color: #ccc;
+  margin: 10px 0 0;
+  line-height: 1.5;
 }
 
 /* Skills Section */
